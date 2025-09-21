@@ -1,0 +1,206 @@
+Lambda Execution Result (Latest Run):
+=== Experiment Errors ===
+
+2025-09-21 16:33:44,777 - INFO - Starting LP robust conformal prediction experiment
+
+2025-09-21 16:33:44,777 - INFO - ============================================================
+
+2025-09-21 16:33:44,777 - INFO - Generating synthetic time series data...
+
+2025-09-21 16:33:45,210 - INFO - Introducing distribution shift...
+
+2025-09-21 16:33:45,382 - INFO - Generated 1000 time series of length 50
+
+2025-09-21 16:33:45,382 - INFO - Introduced distribution shift after index 500
+
+2025-09-21 16:33:45,382 - INFO - Calibration set size: 500
+
+2025-09-21 16:33:45,382 - INFO - Test set size: 500
+
+2025-09-21 16:33:45,382 - INFO - ============================================================
+
+2025-09-21 16:33:45,382 - INFO - Testing ε=0.05, ρ=0.01
+
+2025-09-21 16:33:45,382 - INFO - Fitting LP robust conformal prediction model...
+
+2025-09-21 16:33:45,382 - INFO - Calibration set size: 500
+
+2025-09-21 16:33:45,540 - INFO - Adjusted quantile level: 0.9118
+
+2025-09-21 16:33:45,540 - INFO - Worst-case quantile (ε=0.05, ρ=0.01): 1.8226
+
+2025-09-21 16:33:45,540 - INFO - Generating prediction intervals...
+
+2025-09-21 16:33:45,540 - INFO - Test set size: 500
+
+2025-09-21 16:33:45,540 - INFO - Empirical coverage: 0.2960
+
+2025-09-21 16:33:45,540 - INFO - Target coverage: 0.9000
+
+2025-09-21 16:33:45,540 - INFO - Prediction interval width: 1.8226
+
+2025-09-21 16:33:45,540 - INFO - Results - Coverage: 0.2960, Width: 1.8226
+
+2025-09-21 16:33:45,540 - INFO - ----------------------------------------
+
+2025-09-21 16:33:45,540 - INFO - Testing ε=0.05, ρ=0.05
+
+2025-09-21 16:33:45,540 - INFO - Fitting LP robust conformal prediction model...
+
+2025-09-21 16:33:45,540 - INFO - Calibration set size: 500
+
+2025-09-21 16:33:45,540 - INFO - Adjusted quantile level: 0.9519
+
+2025-09-21 16:33:45,540 - INFO - Worst-case quantile (ε=0.05, ρ=0.05): 2.0891
+
+2025-09-21 16:33:45,540 - INFO - Generating prediction intervals...
+
+2025-09-21 16:33:45,540 - INFO - Test set size: 500
+
+2025-09-21 16:33:45,540 - INFO - Empirical coverage: 0.3940
+
+2025-09-21 16:33:45,540 - INFO - Target coverage: 0.9000
+
+2025-09-21 16:33:45,540 - INFO - Prediction interval width: 2.0891
+
+2025-09-21 16:33:45,541 - INFO - Results - Coverage: 0.3940, Width: 2.0891
+
+2025-09-21 16:33:45,541 - INFO - ----------------------------------------
+
+2025-09-21 16:33:45,541 - INFO - Testing ε=0.05, ρ=0.1
+
+2025-09-21 16:33:45,541 - INFO - Fitting LP robust conformal prediction model...
+
+2025-09-21 16:33:45,541 - INFO - Calibration set size: 500
+
+2025-09-21 16:33:45,541 - ERROR - Error fitting conformal prediction model: Quantiles must be in the range [0, 1]
+
+{
+
+"experimentStatusCode": 500,
+
+"body": {
+
+"message": "Experiment failed",
+
+"returncode": 1,
+
+"stdout": "",
+
+"stderr": "2025-09-21 16:33:44,777 - INFO - Starting LP robust conformal prediction experiment\n2025-09-21 16:33:44,777 - INFO - ============================================================\n2025-09-21 16:33:44,777 - INFO - Generating synthetic time series data...\n2025-09-21 16:33:45,210 - INFO - Introducing distribution shift...\n2025-09-21 16:33:45,382 - INFO - Generated 1000 time series of length 50\n2025-09-21 16:33:45,382 - INFO - Introduced distribution shift after index 500\n2025-09-21 16:33:45,382 - INFO - Calibration set size: 500\n2025-09-21 16:33:45,382 - INFO - Test set size: 500\n2025-09-21 16:33:45,382 - INFO - ============================================================\n2025-09-21 16:33:45,382 - INFO - Testing \u03b5=0.05, \u03c1=0.01\n2025-09-21 16:33:45,382 - INFO - Fitting LP robust conformal prediction model...\n2025-09-21 16:33:45,382 - INFO - Calibration set size: 500\n2025-09-21 16:33:45,540 - INFO - Adjusted quantile level: 0.9118\n2025-09-21 16:33:45,540 - INFO - Worst-case quantile (\u03b5=0.05, \u03c1=0.01): 1.8226\n2025-09-21 16:33:45,540 - INFO - Generating prediction intervals...\n2025-09-21 16:33:45,540 - INFO - Test set size: 500\n2025-09-21 16:33:45,540 - INFO - Empirical coverage: 0.2960\n2025-09-21 16:33:45,540 - INFO - Target coverage: 0.9000\n2025-09-21 16:33:45,540 - INFO - Prediction interval width: 1.8226\n2025-09-21 16:33:45,540 - INFO - Results - Coverage: 0.2960, Width: 1.8226\n2025-09-21 16:33:45,540 - INFO - ----------------------------------------\n2025-09-21 16:33:45,540 - INFO - Testing \u03b5=0.05, \u03c1=0.05\n2025-09-21 16:33:45,540 - INFO - Fitting LP robust conformal prediction model...\n2025-09-21 16:33:45,540 - INFO - Calibration set size: 500\n2025-09-21 16:33:45,540 - INFO - Adjusted quantile level: 0.9519\n2025-09-21 16:33:45,540 - INFO - Worst-case quantile (\u03b5=0.05, \u03c1=0.05): 2.0891\n2025-09-21 16:33:45,540 - INFO - Generating prediction intervals...\n2025-09-21 16:33:45,540 - INFO - Test set size: 500\n2025-09-21 16:33:45,540 - INFO - Empirical coverage: 0.3940\n2025-09-21 16:33:45,540 - INFO - Target coverage: 0.9000\n2025-09-21 16:33:45,540 - INFO - Prediction interval width: 2.0891\n2025-09-21 16:33:45,541 - INFO - Results - Coverage: 0.3940, Width: 2.0891\n2025-09-21 16:33:45,541 - INFO - ----------------------------------------\n2025-09-21 16:33:45,541 - INFO - Testing \u03b5=0.05, \u03c1=0.1\n2025-09-21 16:33:45,541 - INFO - Fitting LP robust conformal prediction model...\n2025-09-21 16:33:45,541 - INFO - Calibration set size: 500\n2025-09-21 16:33:45,541 - ERROR - Error fitting conformal prediction model: Quantiles must be in the range [0, 1]\n",
+
+"execution_time": null
+
+}
+
+}
+
+INIT_REPORT Init Duration: 3276.46 ms	Phase: init	Status: error	Error Type: Runtime.ExitError
+
+=== Experiment Errors ===
+
+2025-09-21 16:33:45,736 - INFO - Starting LP robust conformal prediction experiment
+
+2025-09-21 16:33:45,737 - INFO - ============================================================
+
+2025-09-21 16:33:45,737 - INFO - Generating synthetic time series data...
+
+2025-09-21 16:33:45,817 - INFO - Introducing distribution shift...
+
+2025-09-21 16:33:45,819 - INFO - Generated 1000 time series of length 50
+
+2025-09-21 16:33:45,819 - INFO - Introduced distribution shift after index 500
+
+2025-09-21 16:33:45,819 - INFO - Calibration set size: 500
+
+2025-09-21 16:33:45,819 - INFO - Test set size: 500
+
+2025-09-21 16:33:45,819 - INFO - ============================================================
+
+2025-09-21 16:33:45,819 - INFO - Testing ε=0.05, ρ=0.01
+
+2025-09-21 16:33:45,819 - INFO - Fitting LP robust conformal prediction model...
+
+2025-09-21 16:33:45,819 - INFO - Calibration set size: 500
+
+2025-09-21 16:33:45,829 - INFO - Adjusted quantile level: 0.9118
+
+2025-09-21 16:33:45,830 - INFO - Worst-case quantile (ε=0.05, ρ=0.01): 1.8226
+
+2025-09-21 16:33:45,830 - INFO - Generating prediction intervals...
+
+2025-09-21 16:33:45,830 - INFO - Test set size: 500
+
+2025-09-21 16:33:45,830 - INFO - Empirical coverage: 0.2960
+
+2025-09-21 16:33:45,830 - INFO - Target coverage: 0.9000
+
+2025-09-21 16:33:45,830 - INFO - Prediction interval width: 1.8226
+
+2025-09-21 16:33:45,830 - INFO - Results - Coverage: 0.2960, Width: 1.8226
+
+2025-09-21 16:33:45,830 - INFO - ----------------------------------------
+
+2025-09-21 16:33:45,830 - INFO - Testing ε=0.05, ρ=0.05
+
+2025-09-21 16:33:45,830 - INFO - Fitting LP robust conformal prediction model...
+
+2025-09-21 16:33:45,830 - INFO - Calibration set size: 500
+
+2025-09-21 16:33:45,830 - INFO - Adjusted quantile level: 0.9519
+
+2025-09-21 16:33:45,830 - INFO - Worst-case quantile (ε=0.05, ρ=0.05): 2.0891
+
+2025-09-21 16:33:45,830 - INFO - Generating prediction intervals...
+
+2025-09-21 16:33:45,830 - INFO - Test set size: 500
+
+2025-09-21 16:33:45,830 - INFO - Empirical coverage: 0.3940
+
+2025-09-21 16:33:45,830 - INFO - Target coverage: 0.9000
+
+2025-09-21 16:33:45,830 - INFO - Prediction interval width: 2.0891
+
+2025-09-21 16:33:45,830 - INFO - Results - Coverage: 0.3940, Width: 2.0891
+
+2025-09-21 16:33:45,830 - INFO - ----------------------------------------
+
+2025-09-21 16:33:45,830 - INFO - Testing ε=0.05, ρ=0.1
+
+2025-09-21 16:33:45,831 - INFO - Fitting LP robust conformal prediction model...
+
+2025-09-21 16:33:45,831 - INFO - Calibration set size: 500
+
+2025-09-21 16:33:45,831 - ERROR - Error fitting conformal prediction model: Quantiles must be in the range [0, 1]
+
+{
+
+"experimentStatusCode": 500,
+
+"body": {
+
+"message": "Experiment failed",
+
+"returncode": 1,
+
+"stdout": "",
+
+"stderr": "2025-09-21 16:33:45,736 - INFO - Starting LP robust conformal prediction experiment\n2025-09-21 16:33:45,737 - INFO - ============================================================\n2025-09-21 16:33:45,737 - INFO - Generating synthetic time series data...\n2025-09-21 16:33:45,817 - INFO - Introducing distribution shift...\n2025-09-21 16:33:45,819 - INFO - Generated 1000 time series of length 50\n2025-09-21 16:33:45,819 - INFO - Introduced distribution shift after index 500\n2025-09-21 16:33:45,819 - INFO - Calibration set size: 500\n2025-09-21 16:33:45,819 - INFO - Test set size: 500\n2025-09-21 16:33:45,819 - INFO - ============================================================\n2025-09-21 16:33:45,819 - INFO - Testing \u03b5=0.05, \u03c1=0.01\n2025-09-21 16:33:45,819 - INFO - Fitting LP robust conformal prediction model...\n2025-09-21 16:33:45,819 - INFO - Calibration set size: 500\n2025-09-21 16:33:45,829 - INFO - Adjusted quantile level: 0.9118\n2025-09-21 16:33:45,830 - INFO - Worst-case quantile (\u03b5=0.05, \u03c1=0.01): 1.8226\n2025-09-21 16:33:45,830 - INFO - Generating prediction intervals...\n2025-09-21 16:33:45,830 - INFO - Test set size: 500\n2025-09-21 16:33:45,830 - INFO - Empirical coverage: 0.2960\n2025-09-21 16:33:45,830 - INFO - Target coverage: 0.9000\n2025-09-21 16:33:45,830 - INFO - Prediction interval width: 1.8226\n2025-09-21 16:33:45,830 - INFO - Results - Coverage: 0.2960, Width: 1.8226\n2025-09-21 16:33:45,830 - INFO - ----------------------------------------\n2025-09-21 16:33:45,830 - INFO - Testing \u03b5=0.05, \u03c1=0.05\n2025-09-21 16:33:45,830 - INFO - Fitting LP robust conformal prediction model...\n2025-09-21 16:33:45,830 - INFO - Calibration set size: 500\n2025-09-21 16:33:45,830 - INFO - Adjusted quantile level: 0.9519\n2025-09-21 16:33:45,830 - INFO - Worst-case quantile (\u03b5=0.05, \u03c1=0.05): 2.0891\n2025-09-21 16:33:45,830 - INFO - Generating prediction intervals...\n2025-09-21 16:33:45,830 - INFO - Test set size: 500\n2025-09-21 16:33:45,830 - INFO - Empirical coverage: 0.3940\n2025-09-21 16:33:45,830 - INFO - Target coverage: 0.9000\n2025-09-21 16:33:45,830 - INFO - Prediction interval width: 2.0891\n2025-09-21 16:33:45,830 - INFO - Results - Coverage: 0.3940, Width: 2.0891\n2025-09-21 16:33:45,830 - INFO - ----------------------------------------\n2025-09-21 16:33:45,830 - INFO - Testing \u03b5=0.05, \u03c1=0.1\n2025-09-21 16:33:45,831 - INFO - Fitting LP robust conformal prediction model...\n2025-09-21 16:33:45,831 - INFO - Calibration set size: 500\n2025-09-21 16:33:45,831 - ERROR - Error fitting conformal prediction model: Quantiles must be in the range [0, 1]\n",
+
+"execution_time": null
+
+}
+
+}
+
+INIT_REPORT Init Duration: 270.85 ms	Phase: invoke	Status: error	Error Type: Runtime.ExitError
+
+START RequestId: 511e2daa-9500-47fa-b466-8e67441e52d9 Version: $LATEST
+
+RequestId: 511e2daa-9500-47fa-b466-8e67441e52d9 Error: Runtime exited without providing a reason
+Runtime.ExitError
+
+END RequestId: 511e2daa-9500-47fa-b466-8e67441e52d9
+
+REPORT RequestId: 511e2daa-9500-47fa-b466-8e67441e52d9	Duration: 272.81 ms	Billed Duration: 273 ms	Memory Size: 3008 MB	Max Memory Used: 25 MB	
+
